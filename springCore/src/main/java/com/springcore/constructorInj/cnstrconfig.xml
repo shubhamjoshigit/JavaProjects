@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="com.springcore.constructorInj.Person" name="person" >
+ <constructor-arg name="name" value="Shubham" />
+ <constructor-arg name="age" value="25" />
+ <constructor-arg name="certi">
+ <map>
+ <entry key="java" value="58"/>
+ <entry key="react" value="48"/>
+ <entry key="sql" value="30"/>
+ </map>
+ </constructor-arg>
+ <constructor-arg name="phones">
+ <list>
+ <value>72348927849</value>
+  <value>234543656</value>
+   <value>3245436536</value>
+ </list>
+ </constructor-arg>
+ </bean>
+ </beans>
